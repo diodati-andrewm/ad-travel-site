@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AD Travel Site</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="travel_recommendation.js" defer></script> 
+    <style>
+        body {
+          background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/39/Honolulu01.JPG');
+        }
+        nav {
+            overflow: hidden;
+            background-color: lightblue;
+            position: fixed; /* Set the navbar to fixed position */
+            top: 0; /* Position the navbar at the top of the page */
+            width: 100%; /* Full width */
+            border-bottom: 1px solid black;
+            z-index: 999;
+        }
+    </style> 
+  </head>
+  <body>
+    <nav>
+        <ul>
+            <li style="display: inline-block; padding: 0 3px;"><a href="#home">Home</a></li>
+            <li style="display: inline-block; padding: 0 3px;"><a href="#about-us">About Us</a></li>
+            <li style="display: inline-block; padding: 0 3px;"><a href="#contact">Contact Us</a></li>
+            <input id="search" type="text" placeholder="Enter a destination or keyword" style="display: inline-block; padding: 0 3px;"></input>
+            <button type="button" onclick="scriptFunction()" style="display: inline-block; padding: 0 3px;">Search</button>
+            <button type="button" onclick="clearing()" style="display: inline-block; padding: 0 3px;">Clear</button>
+        </ul>
+    </nav>
+    <section id="results">
+        <h1>Search Results</h1>
+        <p id="results-data">
+        </p>
+    </section>
+    <section id="home">
+    <h1>Welcome!</h1>
+    <p>
+        Hello World! Get ready to travel!!
+    </p>
+    <p>
+        Welcome to AD Travel site - your one stop shop for adventure at a reasonable price!
+    </p>
+    </section>
+    <ul>
+        <li>X (Twitter)</li>
+        <li>Facebook</li>
+        <li>Instagram</li>
+        <li>Youtube</li>
+    </ul>
+    <section id="about-us">
+        <h1>About Us</h1>
+        <p>
+            AD Travel Site is <em>the</em> premier travel website for those that seek adventure.
+            From San Francisco to The Congo, you can count on us.
+        </p>
+        <h2>Our Team</h2>
+        <ul>
+            <li>CEO</li>
+            <li>Lead Dev</li>
+            <li>Marketing</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <p>Get in touch!</p>
+        <form>
+            <label for="name">Name</label></br>
+            <input id="name" type="text" placeholder="First and Last Name"></input></br>
+            <label for="email">Email</label></br>
+            <input id="email" type="email" placeholder="address@email.com"></input></br>
+            <label for="message">Message</label></br>
+            <textarea id="message" placeholder="Please share your thoughts"></textarea>
+            </br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+  </body>
+</html>
